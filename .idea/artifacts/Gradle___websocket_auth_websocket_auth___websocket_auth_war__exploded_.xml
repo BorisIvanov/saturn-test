@@ -1,0 +1,58 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : websocket-auth:websocket-auth : websocket-auth.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/websocket-auth/exploded/websocket-auth.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="websocket-auth/web/Web Gradle : websocket-auth.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="websocket-auth" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: javax.websocket:javax.websocket-api:1.1" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-websocket:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Gradle: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Gradle: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-core:4.0.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-config:4.0.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-web:4.0.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.session:spring-session:1.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-redis:1.6.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.12" />
+          <element id="library" level="project" name="Gradle: org.apache.commons:commons-pool2:2.3" />
+          <element id="library" level="project" name="Gradle: redis.clients:jedis:2.8.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-core:2.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-net:2.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections:5.1.0" />
+          <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections-api:5.1.0" />
+          <element id="library" level="project" name="Gradle: org.reactivestreams:reactive-streams:1.0.0" />
+          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-bus:2.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-stream:2.0.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: io.netty:netty-all:4.0.33.Final" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.6.4" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.6.4" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/websocket-auth/exploded/websocket-auth.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
