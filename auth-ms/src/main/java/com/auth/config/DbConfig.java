@@ -3,9 +3,13 @@ package com.auth.config;
 import com.auth.domain.Account;
 import com.auth.domain.Token;
 import com.auth.repository.impl.AccountRepository;
+import com.auth.repository.impl.TokenRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
@@ -13,16 +17,20 @@ import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import java.util.Properties;
 
 @Configuration
-@ComponentScan(basePackageClasses = AccountRepository.class)
+@ComponentScan(basePackageClasses = {AccountRepository.class, TokenRepository.class})
+@PropertySource("classpath:application.properties")
 public class DbConfig {
+
+    @Autowired
+    private Environment env;
 
     @Bean
     public DriverManagerDataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://pellefant.db.elephantsql.com:5432/vwjyiaeu");
-        dataSource.setUsername("vwjyiaeu");
-        dataSource.setPassword("Hysrs4ePlY_5zxxkt71PE7QoOJnyXDcf");
+        dataSource.setDriverClassName(env.getProperty("hibernate.driver"));
+        dataSource.setUrl(env.getProperty("hibernate.url"));
+        dataSource.setUsername(env.getProperty("hibernate.username"));
+        dataSource.setPassword(env.getProperty("hibernate.password"));
         return dataSource;
     }
 
@@ -30,20 +38,10 @@ public class DbConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
         localSessionFactoryBean.setDataSource(dataSource());
-        //localSessionFactoryBean.setAnnotatedPackages("com.auth.domain");
         localSessionFactoryBean.setAnnotatedClasses(Account.class, Token.class);
         localSessionFactoryBean.setHibernateProperties(hibernateProperties());
         return localSessionFactoryBean;
     }
-
-/*
-    @Bean
-//     public org.springframework.orm.hibernate4.HibernateTransactionManager transactionManager() {
-    public org.springframework.orm.hibernate5.HibernateTransactionManager transactionManager() {
-        HibernateTransactionManager txManager = new HibernateTransactionManager();
-        txManager.setSessionFactory(sessionFactory().getObject());
-        return txManager;
-    }*/
 
     @Bean
     public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
@@ -55,18 +53,13 @@ public class DbConfig {
     public Properties hibernateProperties() {
         return new Properties() {
             {
-                setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
-                //setProperty("hibernate.chach.provider_class", "org.hibernate.cache.NoCacheProvider");
-                setProperty("hibernate.show_sql", "true");
-                setProperty("hibernate.hbm2ddl.auto", "create-drop");
-                setProperty("hibernate.temp.use_jdbc_metadata_defaults", "false");
+                setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
+                setProperty("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+                setProperty("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+                setProperty("hibernate.temp.use_jdbc_metadata_defaults",
+                        env.getProperty("hibernate.temp.use_jdbc_metadata_defaults"));
             }
         };
     }
-/*
-    @Bean
-    public entityManagerFactory(){
-
-    }*/
 
 }

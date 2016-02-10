@@ -2,8 +2,7 @@ group 'websocket-auth'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-
-sourceCompatibility = 1.5
+apply plugin: 'war'
 
 repositories {
     mavenCentral()
@@ -11,6 +10,8 @@ repositories {
 
 dependencies {
     compile project(':saturn-common');
+
+    compile 'javax:javaee-api:7.0'
 
     compile 'org.springframework:spring-webmvc:4.2.4.RELEASE'
     compile 'org.springframework:spring-context:4.2.4.RELEASE'

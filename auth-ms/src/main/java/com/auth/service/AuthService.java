@@ -17,6 +17,7 @@ import saturn.common.protocol.AuthResponseData;
 import saturn.common.protocol.CustomerError;
 import saturn.common.service.JsonService;
 import saturn.common.service.QueueConsumer;
+import saturn.common.service.RabbitService;
 
 import java.util.UUID;
 
@@ -31,6 +32,8 @@ public class AuthService implements QueueConsumer {
     private TokenRepository tokenRepository;
     @Autowired
     private JsonService jsonService;
+    @Autowired
+    private RabbitService rabbitService;
 
 
     public AuthResponseData auth(String name, String password) {
@@ -70,12 +73,12 @@ public class AuthService implements QueueConsumer {
             AuthResponse result = new AuthResponse();
             result.setSequenceId(sequenceId);
             result.setData(auth(authRequest.getData().getEmail(), authRequest.getData().getPassword()));
-            //convertAndSend(queueForSend, result);
+            rabbitService.convertAndSend(result);
         } catch(Exception e){
             logger.error("onMessage", e);
             CustomerError customerError = new CustomerError();
             customerError.setSequenceId(sequenceId);
-            //convertAndSend(queueForSend, customerError);
+            rabbitService.convertAndSend(customerError);
         }
     }
 }

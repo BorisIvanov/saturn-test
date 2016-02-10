@@ -64,4 +64,12 @@ public class RabbitService extends RabbitTemplate {
         });
     }
 
+    @Override
+    public void convertAndSend(Object message) {
+        super.convertAndSend(this.queueForSend, message, messagePostProcessor -> {
+            messagePostProcessor.getMessageProperties().setDeliveryMode(MessageDeliveryMode.NON_PERSISTENT);
+            return messagePostProcessor;
+        });
+    }
+
 }

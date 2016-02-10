@@ -22,9 +22,6 @@ import saturn.common.protocol.CustomerError;
 import saturn.common.service.JsonService;
 import saturn.common.service.RabbitService;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.UUID;
 
 import static org.junit.Assert.assertEquals;
@@ -39,18 +36,7 @@ public class RabbitServiceTest {
     JsonService jsonService;
     @Autowired
     AccountRepository accountRepository;
-    private boolean before = false;
 
-    public String getStringFromResource(String path) throws IOException {
-        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(path);
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        int reads = inputStream.read();
-        while (reads != -1) {
-            baos.write(reads);
-            reads = inputStream.read();
-        }
-        return new String(baos.toByteArray()).replace("\r\n", "");
-    }
 
     @Before
     public void setUp() {

@@ -2,6 +2,7 @@ package com.websocket.service;
 
 import com.websocket.WebSocketServer;
 import org.springframework.amqp.core.Message;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import saturn.common.service.QueueConsumer;
 import saturn.common.service.RabbitService;
@@ -11,6 +12,7 @@ import javax.websocket.Session;
 @Service
 public class MessageService implements QueueConsumer {
 
+    @Autowired
     private RabbitService rabbitService;
 
     @Override

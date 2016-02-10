@@ -35,12 +35,12 @@ public class RabbitConfig {
 
     @Bean
     public Queue queueNode0In() {
-        return new Queue("node-0-in");
+        return new Queue(env.getProperty("rabbit.queue.receive"));
     }
 
     @Bean
     public Queue queueNode0Out() {
-        return new Queue("node-0-out");
+        return new Queue(env.getProperty("rabbit.queue.send"));
     }
 
     @Bean
