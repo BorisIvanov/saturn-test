@@ -1,16 +1,27 @@
 package com.websocket.controller;
 
+import com.auth.protocol.AuthRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.Headers;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.messaging.simp.annotation.SendToUser;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpSession;
+import java.security.Principal;
+import java.util.Map;
+
 @Controller
 public class IndexController {
     private SimpMessagingTemplate template;
+    @Autowired
+    ServletContext servletContext;
 
     @Autowired
     public IndexController(SimpMessagingTemplate template) {
@@ -23,11 +34,11 @@ public class IndexController {
     }
 
     @MessageMapping("/auth")
-    @SendTo("/user")
-    public Object addNum(Object input) throws Exception {
-        Thread.sleep(2000);
-        //Result result = new Result(input.getNum1()+"+"+input.getNum2()+"="+(input.getNum1()+input.getNum2()));
-        return new Object();
+    //@SendTo("/user")
+    @SendToUser(value = "/user", broadcast = false)
+    public Object auth(AuthRequest authRequest, @Headers Map headers, SimpMessageHeaderAccessor headerAccessor) throws Exception {
+        //template.
+        return authRequest;
     }
 
 }

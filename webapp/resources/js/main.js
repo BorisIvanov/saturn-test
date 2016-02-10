@@ -1,11 +1,22 @@
 var stompClient;
 
+var requestSuccess = {
+    type: "LOGIN_CUSTOMER",
+    sequence_id: "09caaa73-b2b1-187e-2b24-683550a49b23",
+    data: {
+        email:"AAA",
+        password:"AAA"
+    }
+};
+
 function connect() {
     var socket = new SockJS("/auth");
     stompClient = Stomp.over(socket);
-    stompClient.connect({}, function(frame) {
-        //setConnected(true);
+    stompClient.connect('guest', 'guest'/*{}*/, function(frame) {
         console.log('----Connected: ' + frame);
+
+        var suffix = frame.headers['queue-suffix'];
+        console.log(suffix);
         stompClient.subscribe('/user', function(calResult){
             //showResult(JSON.parse(calResult.body).result);
             console.log(calResult);
@@ -13,62 +24,29 @@ function connect() {
             console.log('-eee--Connected: ' + res);
         });
 
-        stompClient.send("/app/auth", {}, JSON.stringify({ 'num1': 1, 'num2': 2 }));
+        stompClient.send("/app/auth", {}, JSON.stringify(requestSuccess));
     });
 }
 function disconnect() {
     stompClient.disconnect();
-    //setConnected(false);
     console.log("Disconnected");
 }
 function auth() {
-    //var num1 = document.getElementById('num1').value;
-    //var num2 = document.getElementById('num2').value;
-    connect();
-    //stompClient.send("/app/auth", {}, JSON.stringify({ 'num1': 1, 'num2': 2 }));
-    /*
-    var socket = new WebSocket("ws://localhost:8080/auth");
-    socket.onopen = function() {
-        alert("Connection ready.");
-    };
-
-    socket.onclose = function(event) {
-        if (event.wasClean) {
-            alert('Connection clean close');
-        } else {
-            alert('Connection close'); // например, "убит" процесс сервера
-        }
-        alert('Code: ' + event.code + ' : ' + event.reason);
-    };
-
-    socket.onmessage = function(event) {
-        alert("Receive " + event.data);
-    };
-
-    socket.onerror = function(error) {
-        alert("Error " + error.message);
-    };
-    socket.send("Hello");*/
+    //connect();
+    ws();
 }
 
-var socket;
-function authSocket(){
-    socket = new SockJS('/auth');
+function ws(){
+    var connection = new WebSocket('ws://localhost:8080/auth');
+    connection.onopen = function(){
+        /*Send a small message to the console once the connection is established */
+        console.log('Connection open!');
+        connection.send(JSON.stringify(requestSuccess));
 
-    socket.onopen = function () {
-        // Socket open.. start the game loop.
-        console.log('Info: WebSocket connection opened.');
-        console.log('Info: Press an arrow key to begin.');
-        socket.send("hi");
-    };
-
-    socket.onclose = function () {
-        console.log('Info: WebSocket closed.');
-    };
-
-    socket.onmessage = function (message) {
-        console.log(message);
-    };
+        /*
+        * http://www.byteslounge.com/tutorials/java-ee-html5-websockets-with-multiple-clients-example
+        * */
+    }
 }
 $(document).ready(function(){
 
