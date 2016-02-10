@@ -28,7 +28,8 @@ public class DispatcherServletInitializer extends AbstractAnnotationConfigDispat
     @Override
     protected Class<?>[] getServletConfigClasses() {
         //return new Class<?>[]{WebConfig.class, RedisHttpSessionConfig.class, WebSocketHanderConfig.class};
-        return new Class<?>[]{WebConfig.class, RedisHttpSessionConfig.class, WebSocketConfig.class};
+        //return new Class<?>[]{WebConfig.class, RedisHttpSessionConfig.class, WebSocketConfig.class, WebSocketHandlersConfig.class};
+        return new Class<?>[]{WebConfig.class, RedisHttpSessionConfig.class};
     }
 
     @Override
