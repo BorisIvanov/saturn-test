@@ -2,7 +2,6 @@ package com.websocket;
 
 import com.websocket.config.RedisHttpSessionConfig;
 import com.websocket.config.WebConfig;
-import com.websocket.config.WebSocketConfig;
 import org.junit.runner.RunWith;
 import org.springframework.util.SocketUtils;
 import org.springframework.web.client.RestTemplate;

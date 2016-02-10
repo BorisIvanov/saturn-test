@@ -13,7 +13,8 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan({ "com.websocket.controller", "com.websocket.session", "com.websocket" })
+//@ComponentScan({ "com.websocket.controller", "com.websocket.session", "com.websocket" })
+@ComponentScan(basePackages = { "com.websocket" })
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
