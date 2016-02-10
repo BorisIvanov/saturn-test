@@ -4,16 +4,10 @@ import com.auth.config.AppConfig;
 import com.auth.config.DbConfig;
 import com.auth.config.RabbitConfig;
 import com.auth.domain.Account;
-import com.auth.protocol.AuthRequest;
-import com.auth.protocol.AuthResponse;
-import com.auth.protocol.CustomerError;
 import com.auth.repository.AccountRepository;
-import com.auth.service.JsonService;
-import com.auth.service.RabbitService;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -22,6 +16,11 @@ import org.springframework.amqp.core.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import saturn.common.protocol.AuthRequest;
+import saturn.common.protocol.AuthResponse;
+import saturn.common.protocol.CustomerError;
+import saturn.common.service.JsonService;
+import saturn.common.service.RabbitService;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

@@ -10,8 +10,6 @@ repositories {
 }
 
 dependencies {
-    compile project(':saturn-common');
-
     compile 'org.springframework:spring-webmvc:4.2.4.RELEASE'
     compile 'org.springframework:spring-context:4.2.4.RELEASE'
     compile 'org.springframework:spring-beans:4.2.4.RELEASE'
@@ -25,9 +23,5 @@ dependencies {
     compile 'joda-time:joda-time-hibernate:1.4'
     compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.7.1'
 
-
-
     testCompile group: 'junit', name: 'junit', version: '4.11'
-    testCompile 'org.springframework:spring-test:4.2.4.RELEASE'
-
 }

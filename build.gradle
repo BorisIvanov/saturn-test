@@ -9,6 +9,9 @@ repositories {
 }
 
 dependencies {
+    compile project(':saturn-common')
+    compile project(':auth-ms')
+
     compile 'javax:javaee-api:7.0'
 
     compile 'javax.websocket:javax.websocket-api:1.1'
@@ -27,7 +30,8 @@ dependencies {
     compile 'org.springframework.security:spring-security-core:4.0.3.RELEASE'
     compile 'org.springframework.security:spring-security-config:4.0.3.RELEASE'
     compile 'org.springframework.security:spring-security-web:4.0.3.RELEASE'
-    //compile 'org.springframework.security:spring-security-messaging:4.0.3.RELEASE'
+
+    compile 'org.springframework.amqp:spring-rabbit:1.5.3.RELEASE'
 
 
     compile 'org.springframework.session:spring-session:1.0.2.RELEASE'

@@ -1,29 +1,36 @@
 package com.auth.config;
 
-import com.auth.service.RabbitService;
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import saturn.common.service.RabbitService;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
 @Configuration
+@PropertySource("classpath:application.properties")
 public class RabbitConfig {
 
+    @Autowired
+    private Environment env;
+
     @Bean
-    public ConnectionFactory connectionFactory() throws URISyntaxException {
-        return new CachingConnectionFactory(new URI("amqp://cixyzlsr:LyTGv2DDxxzmDt6bDNHbo7hFatBlTEPa@spotted-monkey.rmq.cloudamqp.com/cixyzlsr"));
+    public ConnectionFactory rabbitConnectionFactory() throws URISyntaxException {
+        return new CachingConnectionFactory(new URI(env.getProperty("rabbit.url")));
     }
 
     @Bean
     public AmqpAdmin amqpAdmin() throws URISyntaxException {
-        return new RabbitAdmin(connectionFactory());
+        return new RabbitAdmin(rabbitConnectionFactory());
     }
 
     @Bean
@@ -37,17 +44,17 @@ public class RabbitConfig {
     }
 
     @Bean
-    public SimpleMessageListenerContainer messageListenerContainer1() throws URISyntaxException {
+    public SimpleMessageListenerContainer messageListenerContainer() throws URISyntaxException {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
-        container.setConnectionFactory(connectionFactory());
-        container.setQueueNames("node-0-out");
+        container.setConnectionFactory(rabbitConnectionFactory());
+        container.setQueueNames(env.getProperty("rabbit.queue.receive"));
         container.setMessageListener(rabbitService());
         return container;
     }
 
     @Bean
     public RabbitService rabbitService() throws URISyntaxException {
-        return new RabbitService(connectionFactory());
+        return new RabbitService(rabbitConnectionFactory(), env.getProperty("rabbit.queue.send"));
     }
 
 

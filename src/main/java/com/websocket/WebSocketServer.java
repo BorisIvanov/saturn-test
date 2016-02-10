@@ -1,46 +1,47 @@
 package com.websocket;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-import javax.servlet.ServletContext;
-import javax.websocket.EndpointConfig;
+import com.websocket.service.MessageService;
+
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
-import javax.ws.rs.core.Context;
-
-import com.websocket.session.RedisWebSocketSessionRepository;
-import com.websocket.session.WebSocketSessionRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
-import org.springframework.web.context.support.WebApplicationContextUtils;
-import org.springframework.web.socket.server.standard.SpringConfigurator;
 
 import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 @ServerEndpoint(value = "/auth")
 public class WebSocketServer {
 
-    private static Set<Session> clients = Collections.synchronizedSet(new HashSet<>());
+    public WebSocketServer() {
+        messageService = SpringApplicationContext.getBean(MessageService.class);
+    }
+
+    private static Map<String, Session> clients = Collections.synchronizedMap(new HashMap<>());
+
+    private MessageService messageService;
+
+    public static synchronized void send(String id, String message) {
+        if (clients.containsKey(id)) {
+            clients.get(id).getAsyncRemote().sendText(message);
+        }
+    }
 
     @OnMessage
     public void handleMessage(Session session, String message) {
-        session.getAsyncRemote().sendText("Hello");
+        messageService.send(session, message);
     }
 
     @OnOpen
     public void onOpen(Session session) {
-        clients.add(session);
+        clients.put(session.getId(), session);
     }
 
     @OnClose
     public void onClose(Session session) {
-        clients.remove(session);
+        clients.remove(session.getId());
     }
 
 }

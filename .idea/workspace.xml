@@ -2,25 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc3ee112-91c7-4766-b5e5-df5c3057e61b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/SpringApplicationContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/session/RedisWebSocketSessionRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/session/WebSocketSessionRepository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/HttpSessionIdHandshakeInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/SessionContextChannelInterceptorAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/config/WebSocketConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/config/WebSocketHandlersConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/handlers/WebSocketConnectHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/handlers/WebSocketDisconnectHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/handlers/WsHandshakeInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/session/ActiveWebSocketUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/session/ActiveWebSocketUserRepository.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/saturn-common/saturn-common.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/QueueConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/service/MessageService.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_4_1_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/protocol/AuthRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/protocol/AuthRequestData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/protocol/AuthResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/protocol/AuthResponseData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/protocol/CustomerError.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/protocol/SaturnErrorData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/protocol/SaturnMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/service/JsonService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/service/RabbitService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/config/WebSecurityConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/session/RedisWebSocketSessionRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/session/WebSocketSessionRepository.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/AuthRequest.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/protocol/AuthRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/AuthRequestData.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/protocol/AuthRequestData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/AuthResponse.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/protocol/AuthResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/AuthResponseData.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/protocol/AuthResponseData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/CustomerError.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/protocol/CustomerError.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/SaturnErrorData.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/protocol/SaturnErrorData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/SaturnMessage.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/protocol/SaturnMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/JsonService.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/JsonService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/RabbitService.java" afterPath="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/RabbitService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/config/AppConfig.class" afterPath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/config/AppConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/config/RabbitConfig.class" afterPath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/config/RabbitConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/service/AuthService.class" afterPath="$PROJECT_DIR$/auth-ms/build/classes/main/com/auth/service/AuthService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/build/classes/test/com/auth/RabbitServiceTest.class" afterPath="$PROJECT_DIR$/auth-ms/build/classes/test/com/auth/RabbitServiceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___websocket_auth_websocket_auth___websocket_auth_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___websocket_auth_websocket_auth___websocket_auth_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___websocket_auth_websocket_auth___websocket_auth_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___websocket_auth_websocket_auth___websocket_auth_war__exploded_.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/auth-ms.iml" afterPath="$PROJECT_DIR$/auth-ms/auth-ms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/build.gradle" afterPath="$PROJECT_DIR$/auth-ms/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/AppConfig.java" afterPath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/AppConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/RabbitConfig.java" afterPath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/RabbitConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/AuthService.java" afterPath="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/AuthService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auth-ms/src/test/java/com/auth/RabbitServiceTest.java" afterPath="$PROJECT_DIR$/auth-ms/src/test/java/com/auth/RabbitServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/SpringApplicationContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/SpringApplicationContext.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/WebSocketServer.java" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/WebSocketServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/config/DispatcherServletInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/config/DispatcherServletInitializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/config/RedisHttpSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/config/RedisHttpSessionConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/config/WebConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/websocket/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/websocket/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/websocket/AuthSocketTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/websocket/AuthSocketTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/websocket-auth.iml" afterPath="$PROJECT_DIR$/websocket-auth.iml" />
     </list>
     <ignored path="webscoket-auth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,6 +62,8 @@
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/auth-ms/.gradle/" />
     <ignored path="$PROJECT_DIR$/auth-ms/build/" />
+    <ignored path="$PROJECT_DIR$/saturn-common/.gradle/" />
+    <ignored path="$PROJECT_DIR$/saturn-common/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,72 +116,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/WebSocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1142#1143#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1255#1256#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1348#1349#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PojoEndpointBase.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-websocket/8.0.30/37928cf653966737168ad9ff84901542df629981/tomcat-websocket-8.0.30-sources.jar!/org/apache/tomcat/websocket/pojo/PojoEndpointBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringApplicationContext.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/SpringApplicationContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36897275">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#689#690#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeanFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.4.RELEASE/9e3b3823c8fd75c4c57afe9bb7c9d4f26c6d97e/spring-beans-4.2.4.RELEASE-sources.jar!/org/springframework/beans/factory/BeanFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationContextAware.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.4.RELEASE/6bb77fb5a402a814329db35e9678803d14ebf1bd/spring-context-4.2.4.RELEASE-sources.jar!/org/springframework/context/ApplicationContextAware.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnOpen.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.1/c2c8923b5cc02e5ff9eb100fc718b582efb164e2/javax.websocket-api-1.1-sources.jar!/javax/websocket/OnOpen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="37" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#2773#0" expanded="false" />
-                <element signature="imports" expanded="false" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1136#1137#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,17 +136,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketSessionRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/session/WebSocketSessionRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="43" />
+              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisWebSocketSessionRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/session/RedisWebSocketSessionRepository.java">
+      <file leaf-file-name="SpringApplicationContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/SpringApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,7 +160,79 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/RedisHttpSessionConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/service/MessageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DispatcherServletInitializer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/DispatcherServletInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saturn-common/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6285178">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RabbitServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth-ms/src/test/java/com/auth/RabbitServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,6 +265,10 @@
           </key>
           <value>
             <list>
+              <ExternalProjectPojo>
+                <option name="name" value=":saturn-common" />
+                <option name="path" value="$PROJECT_DIR$/saturn-common" />
+              </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="websocket-auth" />
                 <option name="path" value="$PROJECT_DIR$" />
@@ -496,11 +541,132 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/saturn-common">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'main'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'main:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles Java source 'test:java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':saturn-common'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':saturn-common'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':saturn-common'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':saturn-common'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes JVM resources 'main:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes JVM resources 'test:resources'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':saturn-common'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':saturn-common'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':saturn-common'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles classes 'test'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/saturn-common" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4364885726434" />
+        <entry key="$PROJECT_DIR$" value="5820453267327" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -515,16 +681,15 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.3/62a559a025fd890c30364296ece14643ba9c8c5b/commons-pool2-2.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax/javaee-api/7.0/51399f902cc27a808122edcbebfaa1ad989954ba/javaee-api-7.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.4.RELEASE/15b6f6d61bc68fe2cc6cbd63e2329601afb8b39/spring-expression-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.1/eeeb68631711256418dfbb47b11c731b6c8f6235/javax.websocket-api-1.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.2.4.RELEASE/cf4317be9c83b4c1c65ce2d3bb96673ac546030a/spring-webmvc-4.2.4.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.4.RELEASE/23cd0109e4eafc5629547e3680b0c4031e82efdd/spring-context-4.2.4.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.4.RELEASE/3329cf71b4bc49c9767ca4f0704ed7b773f29fba/spring-aop-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.2.4.RELEASE/e90ec4fd65454b80e61358adf5503cd904da165f/spring-websocket-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.4.RELEASE/dc8e0874b53435f3e277d9da5aebd8b93cc7cf64/spring-beans-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.4.RELEASE/7c1172bed2a5e4f697316d549e68059dff74c41f/spring-messaging-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.4.RELEASE/d4bcc6f4d8b64d7af9b67bc17f0d5106dce97926/spring-web-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/2.0.7.RELEASE/3f7190ff62e6d8cefa8a832f64140387e473fb41/reactor-core-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-net/2.0.7.RELEASE/f10b3095ac3150cf1d656310267cd70bd29bc8b2/reactor-net-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.33.Final/119a52dd0818028dfe9ac92471ecebf3038f5cca/netty-all-4.0.33.Final.jar" />
@@ -532,30 +697,39 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.0.3.RELEASE/9f420c5742ad063970c5d33f60680a1cee777aa5/spring-security-core-4.0.3.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.0.3.RELEASE/31c0a4d0159f1b668d9512f57fb46aac29949b08/spring-security-config-4.0.3.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.0.3.RELEASE/5f0233d94ca53ac8710780b43791f633f970480a/spring-security-web-4.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-rabbit/1.5.3.RELEASE/29adeda57fa26f49d1319e971377974456c4df25/spring-rabbit-1.5.3.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.session/spring-session/1.0.2.RELEASE/1e79a213b93357a6c7a2870c9ca64e536e3ab800/spring-session-1.0.2.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.6.2.RELEASE/9abfa6e83dc4bc74e953a79f954d963bd0af7a26/spring-data-redis-1.6.2.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/redis.clients/jedis/2.8.0/a9486e200b2195f31ce9b8779a70a5e2450a73ba/jedis-2.8.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.9.2.RELEASE/6026f5ca41b1c7c368d99cdf5cf9bf8d737ecdb2/spring-data-jpa-1.9.2.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.4.RELEASE/3329cf71b4bc49c9767ca4f0704ed7b773f29fba/spring-aop-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.0/ec2410fdf7e0a3022e7c2a2e6241039d1abc1e98/javax.mail-1.5.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-bus/2.0.7.RELEASE/8b83ef6c665ae3499f23fbc7bca5cb8c321a71c4/reactor-bus-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-stream/2.0.7.RELEASE/5c8d4486a6f17177a5411ae195ba68ab02f75759/reactor-stream-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.0/a0990e2e812ac6639b6ce955c91b13228500476e/jackson-annotations-2.6.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.4/27d3a9f7bbdcf72d93c9b2da7017e39551bfa9fb/jackson-core-2.6.4.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.9.RELEASE/2b18a75d2d1652d54355a56484cfc29bbde39750/spring-tx-4.1.9.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.1.2.RELEASE/949a23beb82ebe31d7a1d47022353b8338c4da11/spring-retry-1.1.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-amqp/1.5.3.RELEASE/96f6a01a00fa35d3385c1251703dd31ffe85a692/spring-amqp-1.5.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.2.RELEASE/bc04eea145c8d7099b997c1436afcfc8b9bddf6b/spring-tx-4.2.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/1.0.0.RELEASE/40e98305d55d300fe1db33a75579c3b9918b9517/http-client-1.0.0.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/3.5.7/2cf55912985e6d1df28444ee946e14ebdd4d1489/amqp-client-3.5.7.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.9.RELEASE/460a424533da7dabcc87d42958e28762addd829b/spring-context-support-4.1.9.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.11.2.RELEASE/6422e6f06584244d846d6bc74e5f2c163701b89a/spring-data-commons-1.11.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.4.RELEASE/160ccd89230753d4f49477a967f5876b034d9745/spring-core-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.1.9.RELEASE/d681430cfd81d6cd0e3c1cd5b6e08a1e4dd338ab/spring-orm-4.1.9.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.7/c4b70e763194d274477da4da9b05ea913e877268/aspectjrt-1.8.7.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.13/d78d2242e14e4182625152d225f76ae52b43491d/jcl-over-slf4j-1.7.13.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.4.RELEASE/160ccd89230753d4f49477a967f5876b034d9745/spring-core-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.4.RELEASE/15b6f6d61bc68fe2cc6cbd63e2329601afb8b39/spring-expression-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections/5.1.0/7114c5349c816ea645b1ea3ffcc21fa073cbabc/gs-collections-5.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.9.RELEASE/fa3e6e85ffe54d386371118d8aaac3217ae742e5/spring-jdbc-4.1.9.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.4.RELEASE/d4bcc6f4d8b64d7af9b67bc17f0d5106dce97926/spring-web-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections-api/5.1.0/ea605cdf64cab5fc7b48c99f061d4c8db05b6ff1/gs-collections-api-5.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.3/62a559a025fd890c30364296ece14643ba9c8c5b/commons-pool2-2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
                           </list>
                         </option>
@@ -568,16 +742,15 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.3/62a559a025fd890c30364296ece14643ba9c8c5b/commons-pool2-2.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax/javaee-api/7.0/51399f902cc27a808122edcbebfaa1ad989954ba/javaee-api-7.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.4.RELEASE/15b6f6d61bc68fe2cc6cbd63e2329601afb8b39/spring-expression-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.1/eeeb68631711256418dfbb47b11c731b6c8f6235/javax.websocket-api-1.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.2.4.RELEASE/cf4317be9c83b4c1c65ce2d3bb96673ac546030a/spring-webmvc-4.2.4.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.4.RELEASE/23cd0109e4eafc5629547e3680b0c4031e82efdd/spring-context-4.2.4.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.4.RELEASE/3329cf71b4bc49c9767ca4f0704ed7b773f29fba/spring-aop-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.2.4.RELEASE/e90ec4fd65454b80e61358adf5503cd904da165f/spring-websocket-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.4.RELEASE/dc8e0874b53435f3e277d9da5aebd8b93cc7cf64/spring-beans-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.4.RELEASE/7c1172bed2a5e4f697316d549e68059dff74c41f/spring-messaging-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.4.RELEASE/d4bcc6f4d8b64d7af9b67bc17f0d5106dce97926/spring-web-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/2.0.7.RELEASE/3f7190ff62e6d8cefa8a832f64140387e473fb41/reactor-core-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-net/2.0.7.RELEASE/f10b3095ac3150cf1d656310267cd70bd29bc8b2/reactor-net-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.33.Final/119a52dd0818028dfe9ac92471ecebf3038f5cca/netty-all-4.0.33.Final.jar" />
@@ -585,34 +758,121 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.0.3.RELEASE/9f420c5742ad063970c5d33f60680a1cee777aa5/spring-security-core-4.0.3.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.0.3.RELEASE/31c0a4d0159f1b668d9512f57fb46aac29949b08/spring-security-config-4.0.3.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.0.3.RELEASE/5f0233d94ca53ac8710780b43791f633f970480a/spring-security-web-4.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-rabbit/1.5.3.RELEASE/29adeda57fa26f49d1319e971377974456c4df25/spring-rabbit-1.5.3.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.session/spring-session/1.0.2.RELEASE/1e79a213b93357a6c7a2870c9ca64e536e3ab800/spring-session-1.0.2.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.6.2.RELEASE/9abfa6e83dc4bc74e953a79f954d963bd0af7a26/spring-data-redis-1.6.2.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/redis.clients/jedis/2.8.0/a9486e200b2195f31ce9b8779a70a5e2450a73ba/jedis-2.8.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.9.2.RELEASE/6026f5ca41b1c7c368d99cdf5cf9bf8d737ecdb2/spring-data-jpa-1.9.2.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.4.RELEASE/3329cf71b4bc49c9767ca4f0704ed7b773f29fba/spring-aop-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.0/ec2410fdf7e0a3022e7c2a2e6241039d1abc1e98/javax.mail-1.5.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-bus/2.0.7.RELEASE/8b83ef6c665ae3499f23fbc7bca5cb8c321a71c4/reactor-bus-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-stream/2.0.7.RELEASE/5c8d4486a6f17177a5411ae195ba68ab02f75759/reactor-stream-2.0.7.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.0/a0990e2e812ac6639b6ce955c91b13228500476e/jackson-annotations-2.6.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.4/27d3a9f7bbdcf72d93c9b2da7017e39551bfa9fb/jackson-core-2.6.4.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.9.RELEASE/2b18a75d2d1652d54355a56484cfc29bbde39750/spring-tx-4.1.9.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.1.2.RELEASE/949a23beb82ebe31d7a1d47022353b8338c4da11/spring-retry-1.1.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-amqp/1.5.3.RELEASE/96f6a01a00fa35d3385c1251703dd31ffe85a692/spring-amqp-1.5.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.2.RELEASE/bc04eea145c8d7099b997c1436afcfc8b9bddf6b/spring-tx-4.2.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/1.0.0.RELEASE/40e98305d55d300fe1db33a75579c3b9918b9517/http-client-1.0.0.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/3.5.7/2cf55912985e6d1df28444ee946e14ebdd4d1489/amqp-client-3.5.7.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.9.RELEASE/460a424533da7dabcc87d42958e28762addd829b/spring-context-support-4.1.9.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.11.2.RELEASE/6422e6f06584244d846d6bc74e5f2c163701b89a/spring-data-commons-1.11.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.4.RELEASE/160ccd89230753d4f49477a967f5876b034d9745/spring-core-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.1.9.RELEASE/d681430cfd81d6cd0e3c1cd5b6e08a1e4dd338ab/spring-orm-4.1.9.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.7/c4b70e763194d274477da4da9b05ea913e877268/aspectjrt-1.8.7.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.13/d78d2242e14e4182625152d225f76ae52b43491d/jcl-over-slf4j-1.7.13.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.4.RELEASE/160ccd89230753d4f49477a967f5876b034d9745/spring-core-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.4.RELEASE/15b6f6d61bc68fe2cc6cbd63e2329601afb8b39/spring-expression-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections/5.1.0/7114c5349c816ea645b1ea3ffcc21fa073cbabc/gs-collections-5.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.9.RELEASE/fa3e6e85ffe54d386371118d8aaac3217ae742e5/spring-jdbc-4.1.9.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.4.RELEASE/d4bcc6f4d8b64d7af9b67bc17f0d5106dce97926/spring-web-4.2.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections-api/5.1.0/ea605cdf64cab5fc7b48c99f061d4c8db05b6ff1/gs-collections-api-5.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.3/62a559a025fd890c30364296ece14643ba9c8c5b/commons-pool2-2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.1-GA/d9a09f7732226af26bf99f19e2cffe0ae219db5b/javassist-3.18.1-GA.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.7.Final/3665e33895fa3d9c34e8330743508a2227d3b0db/hibernate-core-5.0.7.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/9.4.1207/f2ea471fbe4446057991e284a6b4b3263731f319/postgresql-9.4.1207.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/aabab3165b8ea936b9360abbf448459c0d04a5a4/geronimo-jta_1.1_spec-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.2/36d6e77a419cb455e6fd5909f6f96b168e21e9d0/joda-time-2.9.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time-hibernate/1.4/179cecf3473df1be04e1a7f3222c7bdde6792327/joda-time-hibernate-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/3e899258936f94649c777193e1be846387ed54b3/jandex-2.0.0.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-joda/2.7.1/aa0712ca93bb6563395d1278480d1ec7356f736b/jackson-datatype-joda-2.7.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.0/19f42c154ffc689f40a77613bc32caeb17d744e3/jackson-annotations-2.7.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.1/4127b62db028f981e81caa248953c0899d720f98/jackson-core-2.7.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.1/14d88822bca655de7aa6ed3e4c498d115505710a/jackson-databind-2.7.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.0.b2/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/7f7d71605755ccf9002bc620c8d9066fda0a2770/spring-messaging-4.2.2.RELEASE.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/auth-ms" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/saturn-common">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax/javaee-api/7.0/51399f902cc27a808122edcbebfaa1ad989954ba/javaee-api-7.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.4.RELEASE/15b6f6d61bc68fe2cc6cbd63e2329601afb8b39/spring-expression-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.websocket/javax.websocket-api/1.1/eeeb68631711256418dfbb47b11c731b6c8f6235/javax.websocket-api-1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.2.4.RELEASE/cf4317be9c83b4c1c65ce2d3bb96673ac546030a/spring-webmvc-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.4.RELEASE/23cd0109e4eafc5629547e3680b0c4031e82efdd/spring-context-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.2.4.RELEASE/e90ec4fd65454b80e61358adf5503cd904da165f/spring-websocket-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.4.RELEASE/dc8e0874b53435f3e277d9da5aebd8b93cc7cf64/spring-beans-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.4.RELEASE/7c1172bed2a5e4f697316d549e68059dff74c41f/spring-messaging-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.4.RELEASE/d4bcc6f4d8b64d7af9b67bc17f0d5106dce97926/spring-web-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/2.0.7.RELEASE/3f7190ff62e6d8cefa8a832f64140387e473fb41/reactor-core-2.0.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-net/2.0.7.RELEASE/f10b3095ac3150cf1d656310267cd70bd29bc8b2/reactor-net-2.0.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.0.33.Final/119a52dd0818028dfe9ac92471ecebf3038f5cca/netty-all-4.0.33.Final.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.4/f2abadd10891512268b16a1a1a6f81890f3e2976/jackson-databind-2.6.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.0.3.RELEASE/9f420c5742ad063970c5d33f60680a1cee777aa5/spring-security-core-4.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.0.3.RELEASE/31c0a4d0159f1b668d9512f57fb46aac29949b08/spring-security-config-4.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.0.3.RELEASE/5f0233d94ca53ac8710780b43791f633f970480a/spring-security-web-4.0.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-rabbit/1.5.3.RELEASE/29adeda57fa26f49d1319e971377974456c4df25/spring-rabbit-1.5.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.session/spring-session/1.0.2.RELEASE/1e79a213b93357a6c7a2870c9ca64e536e3ab800/spring-session-1.0.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.6.2.RELEASE/9abfa6e83dc4bc74e953a79f954d963bd0af7a26/spring-data-redis-1.6.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/redis.clients/jedis/2.8.0/a9486e200b2195f31ce9b8779a70a5e2450a73ba/jedis-2.8.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.9.2.RELEASE/6026f5ca41b1c7c368d99cdf5cf9bf8d737ecdb2/spring-data-jpa-1.9.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.4.RELEASE/3329cf71b4bc49c9767ca4f0704ed7b773f29fba/spring-aop-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.0/ec2410fdf7e0a3022e7c2a2e6241039d1abc1e98/javax.mail-1.5.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-bus/2.0.7.RELEASE/8b83ef6c665ae3499f23fbc7bca5cb8c321a71c4/reactor-bus-2.0.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-stream/2.0.7.RELEASE/5c8d4486a6f17177a5411ae195ba68ab02f75759/reactor-stream-2.0.7.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.0/a0990e2e812ac6639b6ce955c91b13228500476e/jackson-annotations-2.6.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.4/27d3a9f7bbdcf72d93c9b2da7017e39551bfa9fb/jackson-core-2.6.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.1.2.RELEASE/949a23beb82ebe31d7a1d47022353b8338c4da11/spring-retry-1.1.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-amqp/1.5.3.RELEASE/96f6a01a00fa35d3385c1251703dd31ffe85a692/spring-amqp-1.5.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.2.RELEASE/bc04eea145c8d7099b997c1436afcfc8b9bddf6b/spring-tx-4.2.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/1.0.0.RELEASE/40e98305d55d300fe1db33a75579c3b9918b9517/http-client-1.0.0.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/3.5.7/2cf55912985e6d1df28444ee946e14ebdd4d1489/amqp-client-3.5.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.9.RELEASE/460a424533da7dabcc87d42958e28762addd829b/spring-context-support-4.1.9.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.11.2.RELEASE/6422e6f06584244d846d6bc74e5f2c163701b89a/spring-data-commons-1.11.2.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.4.RELEASE/160ccd89230753d4f49477a967f5876b034d9745/spring-core-4.2.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.1.9.RELEASE/d681430cfd81d6cd0e3c1cd5b6e08a1e4dd338ab/spring-orm-4.1.9.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.7/c4b70e763194d274477da4da9b05ea913e877268/aspectjrt-1.8.7.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.13/d78d2242e14e4182625152d225f76ae52b43491d/jcl-over-slf4j-1.7.13.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections/5.1.0/7114c5349c816ea645b1ea3ffcc21fa073cbabc/gs-collections-5.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.9.RELEASE/fa3e6e85ffe54d386371118d8aaac3217ae742e5/spring-jdbc-4.1.9.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.goldmansachs/gs-collections-api/5.1.0/ea605cdf64cab5fc7b48c99f061d4c8db05b6ff1/gs-collections-api-5.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.3/62a559a025fd890c30364296ece14643ba9c8c5b/commons-pool2-2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/7fcf30c25b8f4a9379b9dad0d3f487b25272c026/slf4j-api-1.7.13.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.1-GA/d9a09f7732226af26bf99f19e2cffe0ae219db5b/javassist-3.18.1-GA.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-rabbit/1.5.3.RELEASE/29adeda57fa26f49d1319e971377974456c4df25/spring-rabbit-1.5.3.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/aabab3165b8ea936b9360abbf448459c0d04a5a4/geronimo-jta_1.1_spec-1.1.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.7.Final/3665e33895fa3d9c34e8330743508a2227d3b0db/hibernate-core-5.0.7.Final.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/9.4.1207/f2ea471fbe4446057991e284a6b4b3263731f319/postgresql-9.4.1207.jar" />
@@ -625,21 +885,13 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.0/19f42c154ffc689f40a77613bc32caeb17d744e3/jackson-annotations-2.7.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.1/4127b62db028f981e81caa248953c0899d720f98/jackson-core-2.7.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.1/14d88822bca655de7aa6ed3e4c498d115505710a/jackson-databind-2.7.1.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.0.b2/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/7f7d71605755ccf9002bc620c8d9066fda0a2770/spring-messaging-4.2.2.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.1.2.RELEASE/949a23beb82ebe31d7a1d47022353b8338c4da11/spring-retry-1.1.2.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-amqp/1.5.3.RELEASE/96f6a01a00fa35d3385c1251703dd31ffe85a692/spring-amqp-1.5.3.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.2.RELEASE/bc04eea145c8d7099b997c1436afcfc8b9bddf6b/spring-tx-4.2.2.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/1.0.0.RELEASE/40e98305d55d300fe1db33a75579c3b9918b9517/http-client-1.0.0.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/3.5.7/2cf55912985e6d1df28444ee946e14ebdd4d1489/amqp-client-3.5.7.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
                           </list>
                         </option>
-                        <option name="path" value="$PROJECT_DIR$/auth-ms" />
+                        <option name="path" value="$PROJECT_DIR$/saturn-common" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -775,40 +1027,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/SaturnMessage.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/test/java/com/auth/AuthServiceTest.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/AuthRequest.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/AuthRequestData.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/DbConfig.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/AuthReponseData.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/AuthResponseData.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/domain/Account.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/domain/Token.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/AuthResponse.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/CustomerError.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/dto/SaturnErrorData.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/SaturnErrorData.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/test/resources/valid-in.json" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/repository/impl/AccountRepository.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/repository/AccountRepository.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/AuthService.java" />
-        <option value="$PROJECT_DIR$/auth-ms/build.gradle" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/AuthResponseData.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/test/resources/response-success.json" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/test/resources/valid-in-fail.json" />
         <option value="$PROJECT_DIR$/auth-ms/src/test/resources/valid-in-success.json" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/SaturnMessage.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/AuthRequest.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/protocol/AuthRequestData.java" />
         <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/JsonService.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/RabbitService.java" />
-        <option value="$PROJECT_DIR$/auth-ms/src/test/java/com/auth/RabbitServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/websocket/TomcatWebSocketTestServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/SessionContextChannelInterceptorAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/HttpSessionIdHandshakeInterceptor.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/session/ActiveWebSocketUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/session/ActiveWebSocketUserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/handlers/WebSocketDisconnectHandler.java" />
@@ -818,14 +1053,31 @@
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/config/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/webapp/resources/js/main.js" />
         <option value="$PROJECT_DIR$/src/test/java/com/websocket/AuthSocketTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/websocket/config/DispatcherServletInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/websocket/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/session/WebSocketSessionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websocket/session/RedisWebSocketSessionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/config/RedisHttpSessionConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/websocket/session/RedisWebSocketSessionRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/websocket/WebSocketServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/websocket/SpringApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websocket/service/RabbitService.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websocket/config/RabbitConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websocket/config/DispatcherServletInitializer.java" />
+        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/QueueConsumer.java" />
+        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/RabbitService.java" />
+        <option value="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/QueueConsumer.java" />
+        <option value="$PROJECT_DIR$/saturn-common/build.gradle" />
+        <option value="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/JsonService.java" />
+        <option value="$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/RabbitService.java" />
+        <option value="$PROJECT_DIR$/auth-ms/build.gradle" />
+        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/AuthService.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/RabbitConfig.java" />
+        <option value="$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/auth-ms/src/test/java/com/auth/RabbitServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websocket/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websocket/service/MessageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/websocket/WebSocketServer.java" />
       </list>
     </option>
   </component>
@@ -903,9 +1155,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -913,416 +1162,6 @@
               <option name="myItemId" value="websocket-auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-websocket:4.2.4.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-websocket-4.2.4.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-websocket:4.2.4.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-websocket-4.2.4.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-websocket:4.2.4.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-websocket-4.2.4.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-websocket:4.2.4.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-websocket-4.2.4.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="socket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="standard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-websocket:4.2.4.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-websocket-4.2.4.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-messaging-4.2.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messaging" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-messaging-4.2.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messaging" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-messaging-4.2.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messaging" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tcp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reactor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-messaging-4.2.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="messaging" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-messaging-4.2.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework.data:spring-data-redis:1.6.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.6.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework.data:spring-data-redis:1.6.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.6.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="serializer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework.data:spring-data-redis:1.6.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.6.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.springframework.data:spring-data-redis:1.6.2.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-data-redis-1.6.2.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.apache.tomcat:tomcat-util-scan:8.0.30" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tomcat-util-scan-8.0.30.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.apache.tomcat:tomcat-util-scan:8.0.30" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tomcat-util-scan-8.0.30.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="descriptor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle: org.apache.tomcat:tomcat-util-scan:8.0.30" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tomcat-util-scan-8.0.30.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1344,230 +1183,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="session" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket-auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="websocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="saturn-common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1581,15 +1205,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.websocket.config" />
       <recent name="com.auth.repository.impl" />
       <recent name="com.auth.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Git\websocket-auth\auth-ms" />
       <recent name="C:\Git\websocket-auth\auth-ms\src\test\resources" />
       <recent name="C:\Git\websocket-auth\webapp\WEB-INF" />
       <recent name="C:\Git\websocket-auth\webapp" />
       <recent name="C:\Git\websocket-auth\src" />
-      <recent name="C:\Git\websocket-auth\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
@@ -1745,6 +1370,15 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -2015,11 +1649,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JBoss Server.jboss 10.0.3" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest.test1" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest.testSuccess" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest.testFail" />
-      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest.test1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest.testSuccess" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RabbitServiceTest.testFail" />
     </list>
     <recent_temporary>
       <list size="4">
@@ -2094,14 +1728,14 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40420818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2556391" sideWeight="0.49215686" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25886145" sideWeight="0.49215686" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Websocket Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2192691" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2556391" sideWeight="0.50784314" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11278196" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1895811" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43521595" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37320045" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39424142" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2124,12 +1758,6 @@
           <line>62</line>
           <properties />
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/RabbitService.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/websocket/session/ActiveWebSocketUserRepository.java</url>
@@ -2156,120 +1784,18 @@
           <option name="timeStamp" value="115" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="119" />
+      <option name="time" value="126" />
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="clients" />
+      </configuration>
       <configuration name="JUnit">
         <watch expression="new String(message.getBody())" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/simp/user/UserRegistryMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.2.4.RELEASE/b0dff0f86036a63da9f6505fb7ace50529e64809/spring-websocket-4.2.4.RELEASE-sources.jar!/org/springframework/web/socket/messaging/DefaultSimpUserRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/simp/stomp/StompBrokerRelayMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-46.194443">
-          <caret line="491" column="51" selection-start-line="491" selection-start-column="40" selection-end-line="491" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/simp/stomp/StompSessionHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/simp/stomp/StompSessionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/simp/stomp/StompCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.112526536">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.2.4.RELEASE/b0dff0f86036a63da9f6505fb7ace50529e64809/spring-websocket-4.2.4.RELEASE-sources.jar!/org/springframework/web/socket/server/support/HttpSessionHandshakeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.2.4.RELEASE/b0dff0f86036a63da9f6505fb7ace50529e64809/spring-websocket-4.2.4.RELEASE-sources.jar!/org/springframework/web/socket/server/HandshakeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.4.RELEASE/bcc167b48ae8c9478eb4a8f0e99d095dbf38013f/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/util/WebUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="815" column="0" selection-start-line="815" selection-start-column="0" selection-end-line="815" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.2.4.RELEASE/b0dff0f86036a63da9f6505fb7ace50529e64809/spring-websocket-4.2.4.RELEASE-sources.jar!/org/springframework/web/socket/server/support/OriginHandshakeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/support/MessageBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3927813">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/support/GenericMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6093419">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/support/ExecutorSubscribableChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.552017">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/support/ChannelInterceptorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35456476">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.session/spring-session/1.0.2.RELEASE/efd561d3034b3bbd9759eb63a5e1825e5bf70bb/spring-session-1.0.2.RELEASE-sources.jar!/org/springframework/session/web/socket/server/SessionRepositoryMessageInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.2.2.RELEASE/8a02fbc4280a4404234847e08e6f283579b23608/spring-messaging-4.2.2.RELEASE-sources.jar!/org/springframework/messaging/support/ImmutableMessageChannelInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2347,14 +1873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.6.2.RELEASE/e4e5bc99e119fb880884ff6e65c7323e98b84f28/spring-data-redis-1.6.2.RELEASE-sources.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30309987">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.session/spring-session/1.0.2.RELEASE/efd561d3034b3bbd9759eb63a5e1825e5bf70bb/spring-session-1.0.2.RELEASE-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/EnableRedisHttpSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2373,7 +1891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39310345">
           <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2381,7 +1898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1216992">
           <caret line="96" column="77" selection-start-line="96" selection-start-column="77" selection-end-line="96" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2393,22 +1909,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.4.RELEASE/bcc167b48ae8c9478eb4a8f0e99d095dbf38013f/spring-web-4.2.4.RELEASE-sources.jar!/org/springframework/web/context/support/SpringBeanAutowiringSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2416,7 +1920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2442,26 +1945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/DispatcherServletInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2476,31 +1959,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/RedisHttpSessionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.4.RELEASE/6bb77fb5a402a814329db35e9678803d14ebf1bd/spring-context-4.2.4.RELEASE-sources.jar!/org/springframework/context/ApplicationContextAware.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/session/WebSocketSessionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2508,17 +1970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/session/RedisWebSocketSessionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2530,47 +1981,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-websocket/8.0.30/37928cf653966737168ad9ff84901542df629981/tomcat-websocket-8.0.30-sources.jar!/org/apache/tomcat/websocket/pojo/PojoEndpointBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.6.2.RELEASE/e4e5bc99e119fb880884ff6e65c7323e98b84f28/spring-data-redis-1.6.2.RELEASE-sources.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="87" selection-start-line="57" selection-start-column="87" selection-end-line="57" selection-end-column="87" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-redis/1.6.2.RELEASE/e4e5bc99e119fb880884ff6e65c7323e98b84f28/spring-data-redis-1.6.2.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.9.RELEASE/9ec13a13dc78f5664cc7958a952a73ee8e76af4f/spring-tx-4.1.9.RELEASE-sources.jar!/org/springframework/dao/support/PersistenceExceptionTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/DbConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15154994">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/QueueConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/JsonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saturn-common/src/main/java/saturn/common/service/RabbitService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/domain/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/domain/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/service/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/RabbitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/src/main/java/com/auth/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-ms/src/test/java/com/auth/RabbitServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/WebSocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/SpringApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36897275">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/RedisHttpSessionConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/websocket/config/DispatcherServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saturn-common/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6285178">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

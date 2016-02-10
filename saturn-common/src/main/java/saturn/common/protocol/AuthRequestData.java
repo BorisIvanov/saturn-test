@@ -1,4 +1,4 @@
-package com.auth.protocol;
+package saturn.common.protocol;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

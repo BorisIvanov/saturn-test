@@ -1,4 +1,4 @@
-package com.auth.protocol;
+package saturn.common.protocol;
 
 public class CustomerError extends SaturnMessage<SaturnErrorData> {
     public CustomerError(){
