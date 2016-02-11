@@ -1,8 +1,0 @@
-{
-  "type": "LOGIN_CUSTOMER",
-  "sequence_id": "09caaa73-b2b1-187e-2b24-683550a49b23",
-  "data": {
-    "email":"AAA",
-    "password":"AAA"
-  }
-}

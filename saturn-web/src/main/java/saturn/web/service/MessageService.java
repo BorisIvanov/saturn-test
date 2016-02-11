@@ -1,19 +1,19 @@
-package com.websocket.service;
+package saturn.web.service;
 
-import com.websocket.WebSocketServer;
 import org.springframework.amqp.core.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import saturn.common.service.QueueConsumer;
 import saturn.common.service.RabbitService;
+import saturn.web.WebSocketServer;
 
 import javax.websocket.Session;
 
-//@Service
+@Service
 public class MessageService implements QueueConsumer {
-/*
-    @Autowired
-    private RabbitService rabbitService;*/
+
+    //@Autowired
+    private RabbitService rabbitService;
 
     @Override
     public void onMessage(Message message) {
@@ -21,7 +21,7 @@ public class MessageService implements QueueConsumer {
     }
 
     public void send(Session session, String message){
-        //rabbitService.convertAndSend(message);
+        rabbitService.convertAndSend(message);
     }
 
 }

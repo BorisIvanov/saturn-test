@@ -3,3 +3,5 @@
 /gradle
 /out
 /saturn-common/build
+/auth-ms/build
+/saturn-web/build

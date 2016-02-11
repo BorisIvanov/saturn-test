@@ -78,7 +78,6 @@
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.3.3" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
     <orderEntry type="module" module-name="saturn-common" />
-    <orderEntry type="module" module-name="auth-ms" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.7.0" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.7.1" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-core:5.0.7.Final" level="project" />

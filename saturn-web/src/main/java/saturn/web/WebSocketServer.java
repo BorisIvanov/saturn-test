@@ -1,18 +1,18 @@
-package com.websocket;
+package saturn.web;
 
-import com.websocket.service.MessageService;
+
+import saturn.web.service.MessageService;
 
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-//@ServerEndpoint(value = "/auth")
+@ServerEndpoint(value = "/auth")
 public class WebSocketServer {
 
     public WebSocketServer() {
