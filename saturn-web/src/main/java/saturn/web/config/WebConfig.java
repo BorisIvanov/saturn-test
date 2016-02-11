@@ -9,11 +9,12 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+import saturn.common.config.RabbitConfig;
 
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "saturn.web" })
+@ComponentScan(basePackages = {"saturn.web", "saturn.common"})
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override

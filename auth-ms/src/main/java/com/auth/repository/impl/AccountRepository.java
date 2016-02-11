@@ -9,17 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class AccountRepository implements com.auth.repository.AccountRepository {
+public class AccountRepository extends BaseRepository<Account> implements com.auth.repository.AccountRepository {
 
     @Autowired
     private SessionFactory sessionFactory;
 
-    public void add(Account account){
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        session.save(account);
-        session.getTransaction().commit();
-        session.close();
+    public Session openSession(){
+        return sessionFactory.openSession();
     }
 
     public void update(Account account){

@@ -18,16 +18,13 @@ public class TokenRepository implements com.auth.repository.TokenRepository {
     @Autowired
     private SessionFactory sessionFactory;
 
-    public void add(Token token){
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        session.save(token);
-        session.getTransaction().commit();
-        session.close();
+    public Session openSession(){
+        return sessionFactory.openSession();
     }
 
+
     public List<Token> list(Account account){
-        Session session = sessionFactory.openSession();
+        Session session = openSession();
         List<Token> result = (List<Token>) session
                 .createCriteria(Token.class)
                 .add(Restrictions.eq("account_id", account.getId()))
@@ -35,6 +32,11 @@ public class TokenRepository implements com.auth.repository.TokenRepository {
                 .list();
         session.close();
         return result;
+    }
+
+    @Override
+    public void add(Token token) {
+
     }
 
 }

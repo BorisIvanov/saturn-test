@@ -2,7 +2,6 @@ package com.auth;
 
 import com.auth.config.AppConfig;
 import com.auth.config.DbConfig;
-import com.auth.config.RabbitConfig;
 import com.auth.domain.Account;
 import com.auth.repository.AccountRepository;
 import org.joda.time.DateTime;
@@ -12,7 +11,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 
+import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -27,7 +28,7 @@ import java.util.UUID;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {AppConfig.class, RabbitConfig.class, DbConfig.class})
+@ContextConfiguration(classes = {AppConfig.class, DbConfig.class})
 public class RabbitServiceTest {
 
     @Autowired
@@ -36,6 +37,8 @@ public class RabbitServiceTest {
     JsonService jsonService;
     @Autowired
     AccountRepository accountRepository;
+    @Autowired
+    private AmqpAdmin amqpAdmin;
 
 
     @Before
@@ -50,6 +53,11 @@ public class RabbitServiceTest {
         account.setToken(UUID.randomUUID());
         account.setTokenExpire(DateTime.now(DateTimeZone.UTC).plusDays(30));
         accountRepository.add(account);
+
+        amqpAdmin.deleteQueue("node-0-out");
+        amqpAdmin.deleteQueue("node-0-in");
+        amqpAdmin.declareQueue(new Queue("node-0-out"));
+        amqpAdmin.declareQueue(new Queue("node-0-in"));
     }
 
     @Test
@@ -57,6 +65,7 @@ public class RabbitServiceTest {
         AuthRequest request = new AuthRequest();
         request.getData().setEmail("AAA1");
         request.getData().setPassword("AAA1");
+        request.setSessionId("0");
         rabbitService.convertAndSend("node-0-out", request);
         Message message = null;
         while (message == null) {
@@ -64,6 +73,7 @@ public class RabbitServiceTest {
         }
         CustomerError error = jsonService.readValue(message.getBody(), CustomerError.class);
         assertEquals(error.getSequenceId(), request.getSequenceId());
+        assertEquals(error.getSessionId(), request.getSessionId());
     }
 
     @Test
@@ -71,6 +81,7 @@ public class RabbitServiceTest {
         AuthRequest request = new AuthRequest();
         request.getData().setEmail("AAA");
         request.getData().setPassword("AAA");
+        request.setSessionId("0");
 
         rabbitService.convertAndSend("node-0-out", request);
         Message message = null;
@@ -79,6 +90,7 @@ public class RabbitServiceTest {
         }
         AuthResponse authResponse = jsonService.readValue(message.getBody(), AuthResponse.class);
         assertEquals(authResponse.getSequenceId(), request.getSequenceId());
+        assertEquals(authResponse.getSessionId(), request.getSessionId());
     }
 
 }

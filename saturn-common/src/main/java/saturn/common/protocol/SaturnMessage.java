@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.UUID;
 
-public class SaturnMessage<T> {
+public class SaturnMessage<T> extends InnerSaturnMessage {
     public SaturnMessage(){
         sequenceId = UUID.randomUUID();
     }

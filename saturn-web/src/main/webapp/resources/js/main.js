@@ -37,7 +37,7 @@ function auth() {
 }
 
 function ws(){
-    var connection = new WebSocket('ws://localhost:8080/auth');
+    var connection = new WebSocket('ws://localhost:9090/auth');
     connection.onopen = function(){
         /*Send a small message to the console once the connection is established */
         console.log('Connection open!');

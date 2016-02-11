@@ -35,7 +35,6 @@ dependencies {
 
     compile 'org.springframework.amqp:spring-rabbit:1.5.3.RELEASE'
 
-
     compile 'org.springframework.session:spring-session:1.0.2.RELEASE'
     compile 'org.springframework.data:spring-data-redis:1.6.2.RELEASE'
     compile 'org.apache.commons:commons-pool2:2.2'

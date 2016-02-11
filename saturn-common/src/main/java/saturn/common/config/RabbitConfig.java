@@ -1,4 +1,4 @@
-package com.auth.config;
+package saturn.common.config;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Queue;
@@ -41,20 +41,6 @@ public class RabbitConfig {
     @Bean
     public Queue queueNode0Out() {
         return new Queue(env.getProperty("rabbit.queue.send"));
-    }
-
-    @Bean
-    public SimpleMessageListenerContainer messageListenerContainer() throws URISyntaxException {
-        SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
-        container.setConnectionFactory(rabbitConnectionFactory());
-        container.setQueueNames(env.getProperty("rabbit.queue.receive"));
-        container.setMessageListener(rabbitService());
-        return container;
-    }
-
-    @Bean
-    public RabbitService rabbitService() throws URISyntaxException {
-        return new RabbitService(rabbitConnectionFactory(), env.getProperty("rabbit.queue.send"));
     }
 
 

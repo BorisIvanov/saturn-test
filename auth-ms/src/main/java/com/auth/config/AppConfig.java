@@ -1,13 +1,12 @@
 package com.auth.config;
 
-import com.auth.service.AuthService;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import saturn.common.service.JsonService;
-import saturn.common.service.RabbitService;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan(basePackageClasses = {RabbitService.class, AuthService.class, JsonService.class})
+@ComponentScan(basePackages = {"saturn.common", "com.auth.service"})
+@PropertySource("classpath:application.properties")
 public class AppConfig {
 
 }
