@@ -19,10 +19,17 @@ public class MessageService implements QueueConsumer {
 
     private static final Logger logger = LoggerFactory.getLogger(MessageService.class);
 
-    @Autowired
     private RabbitService rabbitService;
-    @Autowired
     private JsonService jsonService;
+
+    @Autowired
+    public MessageService(JsonService jsonService){
+        this.jsonService = jsonService;
+    }
+
+    public void setRabbitService(RabbitService rabbitService){
+        this.rabbitService = rabbitService;
+    }
 
     @Override
     public void onMessage(Message message) {

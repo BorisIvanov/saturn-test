@@ -37,7 +37,7 @@ function auth() {
 }
 
 function ws(){
-    var connection = new WebSocket('ws://localhost:9090/auth');
+    var connection = new WebSocket('ws://localhost:8080/auth');
     connection.onopen = function(){
         /*Send a small message to the console once the connection is established */
         console.log('Connection open!');
@@ -46,7 +46,11 @@ function ws(){
         /*
         * http://www.byteslounge.com/tutorials/java-ee-html5-websockets-with-multiple-clients-example
         * */
-    }
+    };
+
+    connection.onmessage = function(event) {
+        console.log("Receive data " + event.data);
+    };
 }
 $(document).ready(function(){
 
