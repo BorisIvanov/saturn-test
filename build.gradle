@@ -2,7 +2,6 @@ group 'websocket-auth'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-apply plugin: 'war'
 
 sourceCompatibility = 1.8
 
@@ -11,50 +10,5 @@ repositories {
 }
 
 dependencies {
-    compile project(':saturn-common')
 
-    compile 'javax:javaee-api:7.0'
-
-    compile 'javax.websocket:javax.websocket-api:1.1'
-
-    compile 'org.springframework:spring-webmvc:4.2.4.RELEASE'
-    compile 'org.springframework:spring-context:4.2.4.RELEASE'
-    compile 'org.springframework:spring-websocket:4.2.4.RELEASE'
-    compile 'org.springframework:spring-beans:4.2.4.RELEASE'
-
-    compile 'org.springframework:spring-messaging:4.2.4.RELEASE'
-    compile 'io.projectreactor:reactor-core:2.0.7.RELEASE'
-    compile 'io.projectreactor:reactor-net:2.0.7.RELEASE'
-    compile 'io.netty:netty-all:4.0.33.Final'
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.4'
-
-    compile 'org.springframework.security:spring-security-core:4.0.3.RELEASE'
-    compile 'org.springframework.security:spring-security-config:4.0.3.RELEASE'
-    compile 'org.springframework.security:spring-security-web:4.0.3.RELEASE'
-
-    compile 'org.springframework.amqp:spring-rabbit:1.5.3.RELEASE'
-
-
-    compile 'org.springframework.session:spring-session:1.0.2.RELEASE'
-    compile 'org.springframework.data:spring-data-redis:1.6.2.RELEASE'
-    compile 'org.apache.commons:commons-pool2:2.2'
-    compile 'redis.clients:jedis:2.8.0'
-    compile 'org.springframework.data:spring-data-jpa:1.9.2.RELEASE'
-
-
-
-    testCompile group: 'junit', name: 'junit', version: '4.11'/*
-    testCompile 'org.apache.tomcat:tomcat-coyote:8.0.30'
-    testCompile 'org.apache.tomcat:tomcat-catalina:8.0.30'
-    testCompile 'org.apache.tomcat:tomcat-websocket-api:8.0.30'
-    testCompile 'org.apache.tomcat:tomcat-websocket:8.0.30'
-    testCompile 'org.apache.tomcat:tomcat-util-scan:8.0.30'*/
-
-
-
-}
-
-war {
-    from 'webapp' // adds a file-set to the root of the archive,
-    archiveName 'websocket-auth.war'
 }

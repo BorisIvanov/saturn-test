@@ -1,15 +1,15 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="Gradle : websocket-auth:saturn-web : saturn-web-1.0-SNAPSHOT.war">
-    <output-path>$PROJECT_DIR$/out/artifacts/saturn-web</output-path>
+  <artifact type="exploded-war" name="Gradle : websocket-auth:saturn-auth : saturn-auth-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/saturn-auth/exploded/saturn-auth-1.0-SNAPSHOT.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$" />
     </properties>
-    <root id="archive" name="saturn-web-1.0-SNAPSHOT.war">
-      <element id="javaee-facet-resources" facet="saturn-web/web/Web Gradle : saturn-web-1.0-SNAPSHOT.war" />
+    <root id="root">
+      <element id="javaee-facet-resources" facet="saturn-auth/web/Web Gradle : saturn-auth-1.0-SNAPSHOT.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="saturn-web" />
-          <element id="dir-copy" path="$PROJECT_DIR$/saturn-web/build/resources/main" />
+          <element id="module-output" name="saturn-auth" />
+          <element id="dir-copy" path="$PROJECT_DIR$/saturn-auth/build/resources/main" />
         </element>
         <element id="directory" name="lib">
           <element id="archive" name="websocket-auth-saturn-common-1.0-SNAPSHOT.jar">
@@ -46,6 +46,7 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.retry:spring-retry:1.1.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.amqp:spring-amqp:1.5.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.2.2.RELEASE" />
@@ -59,31 +60,12 @@
           <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.3.0.Final" />
           <element id="library" level="project" name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
           <element id="library" level="project" name="Gradle: javax:javaee-api:7.0" />
-          <element id="library" level="project" name="Gradle: javax.websocket:javax.websocket-api:1.1" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-websocket:4.2.4.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:4.2.4.RELEASE" />
-          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-core:2.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-net:2.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: io.netty:netty-all:4.0.33.Final" />
-          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-core:4.0.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-config:4.0.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.security:spring-security-web:4.0.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.session:spring-session:1.0.2.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-redis:1.6.2.RELEASE" />
-          <element id="library" level="project" name="Gradle: redis.clients:jedis:2.8.0" />
           <element id="library" level="project" name="Gradle: com.sun.mail:javax.mail:1.5.0" />
-          <element id="library" level="project" name="Gradle: org.reactivestreams:reactive-streams:1.0.0" />
-          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-bus:2.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-stream:2.0.7.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:4.1.9.RELEASE" />
           <element id="library" level="project" name="Gradle: javax.activation:activation:1.1" />
-          <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections:5.1.0" />
-          <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections-api:5.1.0" />
-          <element id="library" level="project" name="Gradle: org.apache.commons:commons-pool2:2.3" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/saturn-web/exploded/saturn-web-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/saturn-auth/exploded/saturn-auth-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
       </element>
     </root>
   </artifact>

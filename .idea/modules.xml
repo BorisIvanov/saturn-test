@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/auth-ms/auth-ms.iml" filepath="$PROJECT_DIR$/auth-ms/auth-ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/saturn-auth/saturn-auth.iml" filepath="$PROJECT_DIR$/saturn-auth/saturn-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/saturn-common/saturn-common.iml" filepath="$PROJECT_DIR$/saturn-common/saturn-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/saturn-web/saturn-web.iml" filepath="$PROJECT_DIR$/saturn-web/saturn-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/websocket-auth.iml" filepath="$PROJECT_DIR$/websocket-auth.iml" />

@@ -80,7 +80,6 @@
           <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections:5.1.0" />
           <element id="library" level="project" name="Gradle: com.goldmansachs:gs-collections-api:5.1.0" />
           <element id="library" level="project" name="Gradle: org.apache.commons:commons-pool2:2.3" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:4.2.2.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
