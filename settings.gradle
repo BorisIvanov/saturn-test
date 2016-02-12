@@ -1,5 +1,4 @@
-rootProject.name = 'websocket-auth'
-include 'auth-ms'
+rootProject.name = 'saturn-test'
 include 'saturn-common'
 include 'saturn-web'
 include 'saturn-auth'
