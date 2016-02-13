@@ -31,7 +31,7 @@ public class RabbitService extends RabbitTemplate {
 
     @Override
     public void onMessage(Message message) {
-        queueConsumer.onMessage(message);
+        queueConsumer.messageFromQueue(message);
     }
 
     @Override

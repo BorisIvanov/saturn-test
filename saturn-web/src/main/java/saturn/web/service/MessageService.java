@@ -32,7 +32,7 @@ public class MessageService implements QueueConsumer {
     }
 
     @Override
-    public void onMessage(Message message) {
+    public void messageFromQueue(Message message) {
         try {
             SaturnMessage saturnMessage = jsonService.readValue(message.getBody(), SaturnMessage.class);
             jsonService.writeAsOuterString(saturnMessage);

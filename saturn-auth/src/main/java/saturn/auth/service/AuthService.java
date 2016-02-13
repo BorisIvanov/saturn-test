@@ -70,7 +70,7 @@ public class AuthService implements QueueConsumer {
     }
 
     @Override
-    public void onMessage(Message message) {
+    public void messageFromQueue(Message message) {
         UUID sequenceId;
         AuthRequest authRequest;
         String sessionId;
