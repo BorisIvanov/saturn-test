@@ -15,6 +15,9 @@ dependencies {
     compile project(':saturn-common')
 
     compile 'javax:javaee-api:7.0'
+    compile 'jstl:jstl:1.2'
+
+
 
     compile 'javax.websocket:javax.websocket-api:1.1'
 
