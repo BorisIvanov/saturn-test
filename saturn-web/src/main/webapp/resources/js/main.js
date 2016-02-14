@@ -34,12 +34,14 @@ function connect() {
 $(document).ready(function () {
     $("#btn-connect").on("click", connect);
     $("#btn-send").on("click", function () {
-        connection.send($("#text-send").val());
+        if (connection) {
+            connection.send($("#text-send").val());
+        }
     });
-    $("#btn-set-success").on("click", function(){
+    $("#btn-set-success").on("click", function () {
         $("#text-send").val(JSON.stringify(requestSuccess));
     });
-    $("#btn-set-fail").on("click", function(){
+    $("#btn-set-fail").on("click", function () {
         $("#text-send").val(JSON.stringify(requestFail));
     });
 });

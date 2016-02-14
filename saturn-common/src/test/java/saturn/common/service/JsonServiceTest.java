@@ -73,11 +73,11 @@ public class JsonServiceTest {
     }
 
     @Test
-    public void serializeAuthResponse() throws JsonProcessingException {
+    public void serializeDateFormat() throws JsonProcessingException {
         JsonService jsonService = new JsonService();
         AuthResponse response = new AuthResponse();
         response.setData(new AuthResponseData());
-        response.getData().setApiTokenExpirationDate(DateTime.now());
-        System.out.println(jsonService.writeAsOuterString(response));
+        response.getData().setApiTokenExpirationDate(new DateTime(2016, 2, 14, 0, 0));
+        assertTrue(jsonService.writeAsOuterString(response).contains("\"api_token_expiration_date\":\"2016-02"));
     }
 }

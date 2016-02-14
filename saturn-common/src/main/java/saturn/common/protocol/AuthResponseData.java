@@ -11,7 +11,7 @@ public class AuthResponseData {
     @JsonProperty("api_token")
     private UUID apiToken;
     @JsonProperty("api_token_expiration_date")
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private DateTime apiTokenExpirationDate;
 
     public UUID getApiToken() {
