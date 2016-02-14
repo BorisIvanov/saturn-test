@@ -1,7 +1,6 @@
 package saturn.common.protocol;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 @JsonFilter("sessionIdHide")
 public class InnerSaturnMessage {
